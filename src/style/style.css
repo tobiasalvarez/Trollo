@@ -1,0 +1,333 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.menu div {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.menu div h1 {
+    font-family: sans-serif;
+    font-size: 90px;
+    color: white;
+    position: relative;
+    margin-right: -15px;
+}
+
+.menu div h2 {
+    font-family: sans-serif;
+    font-size: 45px;
+    justify-content: end;
+    color: white;
+    margin-top: 28.5px;
+    position: relative;
+    margin-right: -15px;
+}
+
+.menu img {
+    height: 42px;
+    width: 42px;
+    margin: 20px;
+    margin-right: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.menu img:hover {
+    height: 46px;
+    width: 46px;
+    transition-delay: 0.1s;
+}
+
+#backgroundColorID {
+    display: none;
+}
+
+.backgroundColor {
+    box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+    background-color: white;
+    position: absolute;
+    right: 35px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 302px;
+    width: 52px;
+    border-radius: 8px;
+}
+
+.backgroundColor div {
+    height: 30px;
+    width: 30px;
+    border: 0.5px solid black;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.backgroundColor div:hover {
+    height: 32px;
+    width: 32px;
+    transition-delay: 0.1s;
+}
+
+#cor1 {
+    background-color: rgb(236, 236, 236);
+}
+
+#cor2 {
+    background-color: rgb(73, 73, 73);
+}
+
+#cor3 {
+    background-color: rgb(136, 19, 19);
+}
+
+#cor4 {
+    background-color: rgb(153, 51, 153);
+}
+
+#cor5 {
+    background-color: rgb(33, 123, 197);
+}
+
+#cor6 {
+    background-color: rgb(12, 71, 12);
+}
+
+#cor7 {
+    background-color: rgb(207, 207, 77);
+}
+
+
+/* conteudo da main */
+
+.container {
+    margin-left: 120px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.columns {
+    display: flex;
+}
+
+.columnArea {
+    display: flex;
+    position: relative;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    max-width: 200px;
+    min-height: 500px;
+    max-height: 500px;
+    margin: 20px;
+    box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.columnArea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.columnArea::-webkit-scrollbar-track {
+    background-color: rgb(162, 162, 162);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.columnArea::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 92, 92);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.columnTitleArea {
+    position: fixed;
+    top: 121px;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 4px 0px 5px rgba(34, 33, 33, 0.5);
+}
+
+.columnTitle {
+    font-family: sans-serif;
+    margin-top: 11px;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+#columnButton {
+    border: none;
+    display: block;
+    font-size: 45px;
+    border-radius: 8px;
+    color: white;
+    margin-top: -20px;
+    margin-left: 18px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+}
+
+.taskButton {
+    border: none;
+    display: block;
+    font-size: 30px;
+    color: black;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    width: 186px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+
+.deleteColumn {
+    border-top: 2px solid black;
+    position: fixed;
+    top: 655px;
+    font-size: 30px;
+    height: 40px;
+    width: 198px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+}
+
+.deleteColumn img {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.tasksDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 182px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    height: 130px;
+    cursor: grab;
+}
+
+.tasksDiv h2 {
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tasksDiv p {
+    padding-top: 5px;
+    padding-left: 6px;
+    font-size: 14px;
+    text-align: start;
+    scrollbar-color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.tasksDiv img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tasksTitle {
+    background-color: transparent;
+    width: 98%;
+    height: 30px;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-family: sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.taskDescription {
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 6px;
+    text-align: justify;
+    height: 100px;
+    width: 94%;
+    max-height: 150px;
+    max-width: 94%;
+    scrollbar-color: black;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.taskDescription::-webkit-scrollbar {
+    width: 5px;
+}
+
+.taskDescription::-webkit-scrollbar-track {
+    background-color: rgb(162, 162, 162);
+    margin-bottom: 2px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.taskDescription::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 92, 92);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.dragging{
+    opacity: 0.5;
+    cursor: grabbing;
+}

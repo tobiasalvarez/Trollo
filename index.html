@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>Trollo</title>
+</head>
+<body id="background">
+    <nav class="menu">
+        <div>
+            <h1 id="trolloh1">T</h1>
+            <h2 id="trolloh2">rollo</h2>
+        </div>
+        <img src="./src/img/icons8-color-circle-96 (1).png" alt="Logo Paleta de Cores" onclick="openColorMenu()">
+    </nav>
+    <div class="backgroundColor" id="backgroundColorID">
+        <div id="cor1" onclick="changeBackgroundColor(`rgb(236, 236, 236)`)"></div>
+        <div id="cor2" onclick="changeBackgroundColor(`rgb(73, 73, 73)`)"></div>
+        <div id="cor3" onclick="changeBackgroundColor(`rgb(136, 19, 19)`)"></div>
+        <div id="cor4" onclick="changeBackgroundColor(`rgb(153,51,153)`)"></div>
+        <div id="cor5" onclick="changeBackgroundColor(`rgb(33, 123, 197)`)"></div>
+        <div id="cor6" onclick="changeBackgroundColor(`rgb(12, 71, 12)`)"></div>
+        <div id="cor7" onclick="changeBackgroundColor(`rgb(207, 207, 77)`)"></div>
+    </div>
+    <main class="container" id="containerID">
+        <div class="columns" id="columnsID">
+        </div>
+        <button type="button" onclick="columnCreate()" id="columnButton">+</button>
+    </main>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
